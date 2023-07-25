@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-tlvs
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-ojvd-tenant/mc-quality-dashboard/backend-quality-dashboard-tlvs@sha256:057b0382358bf6a44ae3f29dd4be4a250c8e0fc12e5caf0362f21b47a4d45c0e
+        name: container-image
+        resources: {}
+status: {}
